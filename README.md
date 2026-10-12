@@ -1,6 +1,6 @@
 # Caden Stewart — academic portfolio
 
-A responsive, dependency-free portfolio for Caden Stewart, a Data Science PhD student at UC San Diego. Forest green mountains, original SVG contour artwork, and warm ivory typography reflect a passion for backcountry backpacking.
+A responsive, dependency-free portfolio for Caden Stewart, a Data Science PhD student at UC San Diego. Cool blue mountains, page-edge SVG contour accents, a headshot, and crisp pale typography reflect a passion for backcountry backpacking.
 
 ## What is included
 
@@ -99,3 +99,11 @@ JavaScript syntax and local file/anchor references were checked during creation.
 - https://vercel.com/docs/deployments/configure-a-build
 - https://vercel.com/docs/plans/hobby
 - https://vercel.com/docs/domains/working-with-domains/add-a-domain
+
+## Publication details and figure provenance
+
+`content.js` contains `publicationDetails`, keyed by publication index. Published entries include journal-sourced summaries and DOI links. The hospital-discharge entry uses the published title and complete author list, including Robert El-Kareh. Its representative Figure 1 download could not be retrieved; add an authorized image and attribution to that entry when available.
+
+`assets/perinatal-figure-2.jpg` is Figure 2 from Carrioli et al., Reproduction (2026), DOI https://doi.org/10.1093/reprod/xaag115. It is reproduced unchanged under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. The trajectory is illustrative/hypothetical. The website includes attribution and a license link.
+
+The supplied headshot is used unchanged at `assets/caden-headshot.jpg`. Update that asset to replace the landing-page photo.

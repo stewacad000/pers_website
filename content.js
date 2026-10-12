@@ -1,4 +1,4 @@
-// Edit the CV lists here. Keep publication statuses current.
+// Edit CV lists and publicationDetails here.
 window.portfolio = {
   "publications": [
     [
@@ -23,15 +23,15 @@ window.portfolio = {
       "Reproduction",
       "Wearable Sensors Offer Opportunities for Phenotyping Perinatal Mood Disorders: a Narrative Review",
       "Olimpia Carrioli, Lauryn Keeler Bruce, Saara M Kriplani, Tamar Schaap, Caden Stewart, Benjamin L Smarr",
-      ""
+      "https://doi.org/10.1093/reprod/xaag115"
     ],
     [
       "2026",
       "Published",
       "JHM",
-      "Large Language Model–Assisted Generation of Patient-Facing After-Visit Summaries at Hospital Discharge",
-      "Milla Kviatkovsky, Caden Stewart, Annalise McDonald, Yan Xing, Sara Gianella, Anna Gelberg, Bryan Huang, Shadi Mayasy, Kristina Djekic, Maryann Ally, Ian Jenkins, Benjamin Smarr, Karandeep Singh",
-      ""
+      "Comparison of physician-authored and artificial intelligence-generated after-visit summaries: A blinded comparative study",
+      "Milla Kviatkovsky, Caden Stewart, Annalise McDonald, Yan Xing, Sara Gianella, Anna Gelberg, Bryan Huang, Shadi Mayasy, Kristina Djekic, Maryann Ally, Ian Jenkins, Benjamin Smarr, Karandeep Singh, Robert El-Kareh",
+      "https://doi.org/10.1002/jhm.70435"
     ]
   ],
   "presentations": [
@@ -130,5 +130,19 @@ window.portfolio = {
       "Volunteer Service Missionary in South Korea",
       "Served as a Zone Leader, supervising and training groups of 18–110 full-time volunteers, tracking progress and coordinating skill-development workshops. Achieved Korean fluency and facilitated cooperation between English- and Korean-speaking parties."
     ]
-  ]
+  ],
+  "publicationDetails": {
+    "2": {
+      "summary": "Pregnancy and postpartum can disrupt sleep, circadian rhythms, and hormonal dynamics—systems also implicated in depression and anxiety. This narrative review examines how continuous wearable measurements could complement periodic clinical assessments and reveal individual physiological trajectories. It identifies research directions for more personalized perinatal mental-health monitoring; it does not establish a validated diagnostic tool.",
+      "figure": "assets/perinatal-figure-2.jpg",
+      "alt": "Published Figure 2: a hypothetical individual biomarker trajectory shows deviations that sparse clinical visits may miss, alongside a population range.",
+      "caption": "Figure 2: continuous monitoring versus sparse assessments. The individual trajectory is hypothetical. Carrioli et al., Reproduction (2026), DOI: 10.1093/reprod/xaag115. Reproduced unchanged under CC BY 4.0.",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "3": {
+      "summary": "A retrospective, blinded comparison used 50 adult hospital discharges to evaluate physician-written summaries against GPT-4 and Gemma-generated versions. Five attending physicians assessed communication quality and potential harm. Both models scored higher on understandability and actionability; GPT-4 summaries also had lower physician-rated potential for harm. These findings concern reviewer assessments, not demonstrated patient comprehension or clinical outcomes, and support further prospective evaluation with physician oversight.",
+      "figure": "",
+      "figureNote": "Representative figure: Figure 1 compares PEMAT understandability and actionability. The publisher figure download was inaccessible; the article link provides the original figure and full context."
+    }
+  }
 };

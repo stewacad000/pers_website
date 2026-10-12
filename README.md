@@ -16,20 +16,28 @@ python3 -m http.server 8000
 
 Visit http://localhost:8000. Stop the server with Ctrl+C.
 
-## GitHub and Vercel setup
+## Your launch status
 
-Repository: https://github.com/stewacad000/pers_website
+- Live website: https://caden-stewart.vercel.app
+- Source repository: https://github.com/stewacad000/pers_website
+- Vercel project: `caden-stewart`
+- Hosting account reported the Hobby plan at creation.
+- The initial production deployment was uploaded directly and reached Ready.
+- Automatic GitHub deployments are **not connected yet**: Vercel requires a GitHub Login Connection inside Vercel. Connecting the GitHub and Vercel plugins in ChatGPT does not create that connection.
 
-1. Open https://vercel.com/new and sign in to your personal Hobby account.
-2. Under **Import Git Repository**, connect GitHub if prompted. Grant Vercel access to `stewacad000/pers_website` and select **Import**. If it is missing, use **Adjust GitHub App Permissions** and authorize this repository.
-3. Name the project `caden-stewart` (or another available name).
-4. Set **Framework Preset** to **Other**, **Root Directory** to the repository root, leave **Build Command** empty, and set **Output Directory** to `.`. No environment variables are required. The included `vercel.json` supplies the static configuration.
-5. Select **Deploy**. Wait for the deployment to become Ready and open its assigned URL. The actual URL is assigned by Vercel; do not assume a name is available.
-6. In **Project Settings → Git**, confirm the connected repository is `stewacad000/pers_website` and **Production Branch** is `main`.
-7. Open the production URL in a private browser window to confirm that visitors can access it. If sign-in protection is enabled for production, adjust **Settings → Deployment Protection** so the public portfolio is accessible.
-8. Check navigation on phone and desktop; try all publication filters; expand presentations, posters, and service; open the printable CV; and verify email and LinkedIn links.
+## Finish automatic GitHub updates (one-time setup)
 
-If the project has already been deployed and connected for you, begin at step 6. Do not create a duplicate project.
+1. Sign in to https://vercel.com using the same account used for this deployment.
+2. Open **Account Settings → Authentication** and connect your GitHub account `stewacad000` in the login connections area. Follow the GitHub authorization flow.
+3. Open the existing **caden-stewart** project. Do not create another project.
+4. Open **Settings → Git → Connect Git Repository**. Choose GitHub, authorize the Vercel GitHub app for `stewacad000/pers_website` if prompted, and select that repository. If it is missing, adjust the GitHub app repository access.
+5. Confirm the **Production Branch** is `main`.
+6. In **Settings → Build and Deployment**, confirm **Framework Preset: Other**, repository root directory, empty **Build Command**, and **Output Directory: .**. No environment variables are required. `vercel.json` supplies the static configuration.
+7. Make a small change to `index.html` in GitHub, commit it to `main`, and watch Vercel's **Deployments** page. A new deployment should reach **Ready** and the live website should reflect your change.
+8. Open https://caden-stewart.vercel.app in a private browser window to confirm public access. Production authentication protection was disabled at launch so visitors can view the portfolio.
+9. Check the page on phone and desktop; try all publication filters; expand presentations, posters, and service; open the printable CV; and verify email and LinkedIn links.
+
+If menu labels differ, use Vercel's settings search for Authentication/Login Connections or Git. The key requirement is both a GitHub login connection and repository authorization inside Vercel.
 
 Vercel Hobby is for personal, non-commercial projects and has usage limits. This static portfolio uses no server functions, database, paid add-ons, or third-party font requests. A free Vercel-assigned domain is enough; purchasing a custom domain is optional.
 

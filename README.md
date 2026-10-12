@@ -107,3 +107,11 @@ JavaScript syntax and local file/anchor references were checked during creation.
 `assets/perinatal-figure-2.jpg` is Figure 2 from Carrioli et al., Reproduction (2026), DOI https://doi.org/10.1093/reprod/xaag115. It is reproduced unchanged under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. The trajectory is illustrative/hypothetical. The website includes attribution and a license link.
 
 The supplied headshot is used unchanged at `assets/caden-headshot.jpg`. Update that asset to replace the landing-page photo.
+
+## Painted sunset update
+
+The homepage uses an original generated gouache/oil-style mountain sunset at `assets/painted-sunset.jpg`; the uploaded inspiration photograph is not included. The prompt requested an orange/amber sunset, green wilderness ridges, dark umber foreground, visible brushwork, and a winding trail, with no text or contour overlays.
+
+The supplied discharge Figure 1 is `assets/discharge-figure-1.png`. The Research Square preprint Figure 2 is excerpted from page 21 at `assets/conformal-figure-2.png`, attributed to Stewart et al., DOI 10.21203/rs.3.rs-6458806/v1, CC BY 4.0. Preprint and submitted-manuscript titles differ, so both are identified.
+
+The autism DOI is https://doi.org/10.64898/2026.05.06.26352564. Its figure/PDF download was blocked. LinkedIn blocked direct profile/media retrieval; the supplied headshot is retained, poster images await user uploads, and profile links appear in navigation and the poster section.

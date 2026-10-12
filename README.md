@@ -115,3 +115,9 @@ The homepage uses an original generated gouache/oil-style mountain sunset at `as
 The supplied discharge Figure 1 is `assets/discharge-figure-1.png`. The Research Square preprint Figure 2 is excerpted from page 21 at `assets/conformal-figure-2.png`, attributed to Stewart et al., DOI 10.21203/rs.3.rs-6458806/v1, CC BY 4.0. Preprint and submitted-manuscript titles differ, so both are identified.
 
 The autism DOI is https://doi.org/10.64898/2026.05.06.26352564. Its figure/PDF download was blocked. LinkedIn blocked direct profile/media retrieval; the supplied headshot is retained, poster images await user uploads, and profile links appear in navigation and the poster section.
+
+## Uploaded asset update
+
+The landing page now uses `assets/caden-headshot-new.jpg`, supplied directly by Caden. The autism preprint uses the supplied `assets/autism-figure-1.png`. No color legend was inferred from the standalone figure.
+
+The poster gallery is expanded by default and includes preview images and full PDF links for the AMIA Alzheimer’s/pollution poster and the DELPHI Project ECHO poster. Website PDFs are compressed copies preserving vector text, with raster images downsampled for practical download size. Originals remain in the uploaded files. Poster previews link to their PDF for readable zoom. `posterDetails` in `content.js` controls these assets.

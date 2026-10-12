@@ -1,4 +1,4 @@
-// Edit CV lists and publicationDetails here.
+// Edit CV lists and figure details here.
 window.portfolio = {
   "publications": [
     [
@@ -146,8 +146,9 @@ window.portfolio = {
       "caption": "Figure 1: PEMAT understandability and actionability scores for GPT-4, Gemma, and physician-written discharge summaries. Kviatkovsky et al., Journal of Hospital Medicine (2026), DOI: 10.1002/jhm.70435. Original figure supplied by Caden Stewart."
     },
     "0": {
-      "figure": "",
-      "figureNote": "Preprint available on medRxiv. A representative figure will be added when the original image is available."
+      "figure": "assets/autism-figure-1.png",
+      "alt": "Four panels show participant-by-study-day grids over 14 days for the VivaLNK patch, Fitbit wristband, Wellue ring, and Muse headband.",
+      "caption": "Figure 1: participant-by-day monitoring patterns across four wearable form factors over a 14-day study period. Stewart et al., medRxiv preprint (2026), DOI: 10.64898/2026.05.06.26352564. Original figure supplied by Caden Stewart."
     },
     "1": {
       "summary": "This preprint explores uncertainty in psychiatric predictions using Fitbit sleep, activity, and heart-rate data from 13,835 All of Us participants. A base LSTM achieved roughly 64% accuracy. Inductive conformal prediction formed sets containing the true label at approximately 90% coverage across repeated runs. This highlights uncertainty-aware prediction rather than a validated stand-alone diagnostic tool.",
@@ -156,6 +157,18 @@ window.portfolio = {
       "caption": "Figure 2: inductive conformal prediction and base LSTM performance across 100 runs at α = 0.1. Stewart et al., Research Square preprint (2025), DOI: 10.21203/rs.3.rs-6458806/v1. Figure excerpt; caption typeset separately. CC BY 4.0.",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "versionTitle": "Preprint title: Conformal Learning for Quantifying Uncertainty in Psychiatric Condition Predictions"
+    }
+  },
+  "posterDetails": {
+    "0": {
+      "image": "assets/amia-alz-poster.jpg",
+      "pdf": "assets/amia-alz-poster.pdf",
+      "alt": "AMIA poster showing a shapelet analysis of PM2.5 pollution patterns and county-level Alzheimer’s disease incidence trends."
+    },
+    "1": {
+      "image": "assets/echo-delphi-poster.jpg",
+      "pdf": "assets/echo-delphi-poster.pdf",
+      "alt": "Project ECHO poster connecting rural healthcare training topics to public health indicators through distributional semantics."
     }
   }
 };

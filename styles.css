@@ -36,3 +36,9 @@ h2 em,.outside em{color:#a5512d}.large{color:#5f4a32}.research{background:#eee9d
 
 .linkedin-logo{display:inline-block;width:14px;height:14px;vertical-align:-2px;margin-right:6px;flex-shrink:0}
 .project-number a{text-underline-offset:3px}.project-number a:hover{color:var(--ink)}
+
+.lab-links{margin-top:26px;padding-top:20px;border-top:1px solid var(--line)}.about .lab-links p{margin:0 0 10px;font-size:14px}.lab-links strong{font-weight:600;color:var(--ink)}.lab-links a{text-underline-offset:4px}
+
+.strava-note{max-width:480px;margin:0 0 24px;color:#f4e8d3;font-size:14px;line-height:1.7}.strava-follow{display:inline-flex;align-items:center;gap:7px;margin-top:8px;color:#fff0d5}.strava-logo{width:18px;height:18px;flex-shrink:0}
+
+.strava-note .strava-logo{vertical-align:-3px;margin-right:4px}

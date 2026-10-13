@@ -15,8 +15,6 @@ if (data) {
       return `<article class="talk ${poster ? 'poster-entry' : ''}"><div><p class="eyebrow">${escapeHTML(year)} / ${escapeHTML(venue)}</p><h3>${escapeHTML(title)}</h3><p class="authors">${authors(names)}</p>${poster ? `<a class="pub-link" href="${escapeHTML(poster.pdf)}" target="_blank" rel="noopener noreferrer">Open full poster PDF ↗</a>` : ''}</div>${poster ? `<a class="poster-preview" href="${escapeHTML(poster.pdf)}" target="_blank" rel="noopener noreferrer" aria-label="Open poster: ${escapeHTML(title)}"><img src="${escapeHTML(poster.image)}" alt="${escapeHTML(poster.alt)}" loading="lazy"><span>View full poster ↗</span></a>` : ''}</article>`;
     }).join('');
   }
-  document.querySelector('#award-list').innerHTML = data.awards.map(([year,title,note]) => `<div class="award"><span>${escapeHTML(year)}</span><p>${escapeHTML(title)}${note?`<br><small>${escapeHTML(note)}</small>`:''}</p></div>`).join('');
-  document.querySelector('#service-list').innerHTML = data.service.map(([year,title,description]) => `<article class="talk"><p class="eyebrow">${escapeHTML(year)}</p><h3>${escapeHTML(title)}</h3><p>${escapeHTML(description)}</p></article>`).join('');
   document.querySelector('.filters').hidden = false;
   document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => {
     document.querySelectorAll('[data-filter]').forEach(other => { const active=other===button;other.classList.toggle('selected',active);other.setAttribute('aria-pressed',String(active)); });

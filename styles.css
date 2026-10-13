@@ -44,3 +44,11 @@ h2 em,.outside em{color:#a5512d}.large{color:#5f4a32}.research{background:#eee9d
 .strava-note .strava-logo{vertical-align:-3px;margin-right:4px}
 
 svg.audio-wave{stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.eeg-headphones .headphone-icon{stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.eeg-headphones .eeg-wave{stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* Portrait and Strava note share the right side of the landing page. */
+.hero{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:30px}
+.landscape{display:grid;grid-template-columns:200px minmax(0,1fr);align-items:center;gap:24px;text-align:left;min-width:0}
+.portrait-group{display:flex;flex-direction:column;align-items:center;gap:15px;text-align:center;min-width:0}
+.landscape .strava-note{border-left:1px solid #f4e6cb80;padding-left:24px;margin:0;max-width:260px;font-size:13px;line-height:1.7}
+@media(max-width:1050px){.hero{grid-template-columns:1fr;gap:0}.hero-copy{max-width:800px;padding-bottom:20px}.landscape{grid-template-columns:170px minmax(0,1fr);width:100%;max-width:470px;justify-self:end}.hero .actions{margin-bottom:20px}}
+@media(max-width:760px){.landscape{grid-template-columns:clamp(80px,23vw,108px) minmax(0,1fr);gap:18px;max-width:470px;padding-bottom:35px}.landscape .headshot{width:clamp(80px,23vw,108px);height:clamp(80px,23vw,108px)}.landscape .strava-note{padding-left:18px;font-size:12px;max-width:none}.portrait-group .portrait-label{text-align:center;font-size:12px}.hero-copy{padding-bottom:25px}}

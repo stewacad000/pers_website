@@ -33,3 +33,6 @@ h2 em,.outside em{color:#a5512d}.large{color:#5f4a32}.research{background:#eee9d
 /* Contour illustration beneath the About heading. */
 .about-map{display:block;width:100%;max-width:420px;height:auto;margin-top:12px;border-radius:4px}
 @media(max-width:760px){.about-map{max-width:360px}}
+
+.linkedin-logo{display:inline-block;width:14px;height:14px;vertical-align:-2px;margin-right:6px;flex-shrink:0}
+.project-number a{text-underline-offset:3px}.project-number a:hover{color:var(--ink)}

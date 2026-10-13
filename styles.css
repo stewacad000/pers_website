@@ -29,3 +29,7 @@ h2 em,.outside em{color:#a5512d}.large{color:#5f4a32}.research{background:#eee9d
 .headshot{object-position:45% 39%}.poster-entry{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.7fr);gap:35px;align-items:start}.poster-preview{display:block;background:#fff;padding:10px;border:1px solid var(--line);text-decoration:none;max-width:420px}.poster-preview img{display:block;width:100%;height:auto;max-height:390px;object-fit:contain}.poster-preview span{display:block;text-align:center;font-size:11px;margin-top:10px}.poster-preview:hover{border-color:#a56c37;box-shadow:0 4px 16px #6f4e201a}@media(max-width:760px){.poster-entry{grid-template-columns:1fr;gap:20px}.poster-preview{max-width:100%}.poster-preview img{max-height:450px}}
 
 @media(max-width:760px){.interest-strip{font-size:12px}.headshot{grid-row:auto}}
+
+/* Contour illustration beneath the About heading. */
+.about-map{display:block;width:100%;max-width:420px;height:auto;margin-top:12px;border-radius:4px}
+@media(max-width:760px){.about-map{max-width:360px}}

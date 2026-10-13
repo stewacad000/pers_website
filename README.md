@@ -1,10 +1,10 @@
 # Caden Stewart — academic portfolio
 
-A responsive, dependency-free portfolio for Caden Stewart, a Data Science PhD student at UC San Diego. Cool blue mountains, page-edge SVG contour accents, a headshot, and crisp pale typography reflect a passion for backcountry backpacking.
+A responsive, dependency-free academic portfolio for Caden Stewart, a Data Science PhD student at UC San Diego. An original painted mountain sunset, warm colors, and subtle contour accents frame the research-focused content.
 
 ## What is included
 
-Research overview and three ongoing projects; four publications with status filters; five presentations and three posters; education and GPAs; six fellowships, scholarships, and awards; three leadership/service roles; email, phone, LinkedIn, and a printable web CV. All academic facts and publication statuses come from the supplied CV. The backpacking section comes from Caden's stated interest. The mountain drawings are original illustrations, not maps of a real location.
+Research overview and three ongoing projects; four publications with status filters; five presentations and three posters; education and GPAs; six fellowships, scholarships, and awards; three leadership/service roles; email, LinkedIn, and a printable web CV. All academic facts and publication statuses come from the supplied CV. The mountain drawings are original illustrations, not maps of a real location.
 
 ## Preview on your computer
 
@@ -51,7 +51,7 @@ Vercel Hobby is for personal, non-commercial projects and has usage limits. This
 
 | What you want to change | File |
 | --- | --- |
-| Name, bio, advisors, research projects, education, contact links, backpacking text | `index.html` |
+| Name, bio, advisors, research projects, education, contact links | `index.html` |
 | Publications, author lists, statuses, presentations, posters, awards, service | `content.js` |
 | Colors, spacing, fonts, mobile layout | `styles.css` |
 | Filters and section navigation behavior | `script.js` |
@@ -114,10 +114,14 @@ The homepage uses an original generated gouache/oil-style mountain sunset at `as
 
 The supplied discharge Figure 1 is `assets/discharge-figure-1.png`. The Research Square preprint Figure 2 is excerpted from page 21 at `assets/conformal-figure-2.png`, attributed to Stewart et al., DOI 10.21203/rs.3.rs-6458806/v1, CC BY 4.0. Preprint and submitted-manuscript titles differ, so both are identified.
 
-The autism DOI is https://doi.org/10.64898/2026.05.06.26352564. Its figure/PDF download was blocked. LinkedIn blocked direct profile/media retrieval; the supplied headshot is retained, poster images await user uploads, and profile links appear in navigation and the poster section.
+The autism DOI is https://doi.org/10.64898/2026.05.06.26352564. Its figure, the updated headshot, and the two poster files were supplied by Caden and are now included. Profile links appear in navigation and the poster section.
 
 ## Uploaded asset update
 
 The landing page now uses `assets/caden-headshot-new.jpg`, supplied directly by Caden. The autism preprint uses the supplied `assets/autism-figure-1.png`. No color legend was inferred from the standalone figure.
 
 The poster gallery is expanded by default and includes preview images and full PDF links for the AMIA Alzheimer’s/pollution poster and the DELPHI Project ECHO poster. Website PDFs are compressed copies preserving vector text, with raster images downsampled for practical download size. Originals remain in the uploaded files. Poster previews link to their PDF for readable zoom. `posterDetails` in `content.js` controls these assets.
+
+## Research-focused copy
+
+The painted sunset and mountain theme remain. The homepage headline, introduction, portrait label, and footer focus on Data Science and mental-health research. Explicit hobby references and the backpacking section have been removed.

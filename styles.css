@@ -42,3 +42,5 @@ h2 em,.outside em{color:#a5512d}.large{color:#5f4a32}.research{background:#eee9d
 .strava-note{max-width:480px;margin:0 0 24px;color:#f4e8d3;font-size:14px;line-height:1.7}.strava-follow{display:inline-flex;align-items:center;gap:7px;margin-top:8px;color:#fff0d5}.strava-logo{width:18px;height:18px;flex-shrink:0}
 
 .strava-note .strava-logo{vertical-align:-3px;margin-right:4px}
+
+svg.audio-wave{stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.eeg-headphones .headphone-icon{stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.eeg-headphones .eeg-wave{stroke-width:2;stroke-linecap:round;stroke-linejoin:round}

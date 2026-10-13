@@ -52,3 +52,10 @@ svg.audio-wave{stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.eeg-he
 .landscape .strava-note{border-left:1px solid #f4e6cb80;padding-left:24px;margin:0;max-width:260px;font-size:13px;line-height:1.7}
 @media(max-width:1050px){.hero{grid-template-columns:1fr;gap:0}.hero-copy{max-width:800px;padding-bottom:20px}.landscape{grid-template-columns:170px minmax(0,1fr);width:100%;max-width:470px;justify-self:end}.hero .actions{margin-bottom:20px}}
 @media(max-width:760px){.landscape{grid-template-columns:clamp(80px,23vw,108px) minmax(0,1fr);gap:18px;max-width:470px;padding-bottom:35px}.landscape .headshot{width:clamp(80px,23vw,108px);height:clamp(80px,23vw,108px)}.landscape .strava-note{padding-left:18px;font-size:12px;max-width:none}.portrait-group .portrait-label{text-align:center;font-size:12px}.hero-copy{padding-bottom:25px}}
+
+/* Landing-page placement, sleep graphic, and longer contact heading. */
+.landscape{position:relative;left:24px}
+svg.sleep-wearable{stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.contact h2{font-size:clamp(32px,3.4vw,50px);line-height:1.2;max-width:1000px;letter-spacing:-.035em;text-wrap:balance}
+@media(max-width:1050px){.landscape{left:16px}}
+@media(max-width:760px){.landscape{left:8px}.contact h2{font-size:clamp(30px,7vw,40px)}}

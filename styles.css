@@ -71,3 +71,7 @@ svg.sleep-wearable{stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .hero-copy,.hero .landscape{z-index:2}.trekking-underline{display:block;width:100%;max-width:1000px;height:auto;margin:-12px 0 28px}
 @media(max-width:760px){.hero-mist{object-position:62% center}.trekking-underline{margin-top:0}}
 @media(prefers-reduced-motion:reduce){.hero-mist,.hero-shade{display:none}}
+
+.about-visual{position:relative;width:100%;max-width:420px;margin-top:12px;overflow:hidden;border-radius:4px}.about-visual .about-map{margin:0;max-width:none}.about-mist{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+@media(max-width:760px){.about-visual{max-width:360px}}
+@media(prefers-reduced-motion:reduce){.about-mist{display:none}}

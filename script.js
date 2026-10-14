@@ -31,12 +31,14 @@ if ('IntersectionObserver' in window) {
   document.querySelectorAll('main section[id]').forEach(section => observer.observe(section));
 }
 
-const heroMist = document.querySelector('.hero-mist');
-if (heroMist && window.matchMedia) {
+const mistVideos = document.querySelectorAll('.hero-mist, .about-mist');
+if (mistVideos.length && window.matchMedia) {
   const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
   const updateMistPlayback = () => {
-    if (motionPreference.matches) heroMist.pause();
-    else heroMist.play().catch(() => {});
+    mistVideos.forEach(video => {
+      if (motionPreference.matches) video.pause();
+      else video.play().catch(() => {});
+    });
   };
   updateMistPlayback();
   motionPreference.addEventListener('change', updateMistPlayback);

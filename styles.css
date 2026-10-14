@@ -77,3 +77,15 @@ svg.sleep-wearable{stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 @media(prefers-reduced-motion:reduce){.about-mist{display:none}}
 
 .publication-profiles{display:flex;align-items:center;flex-wrap:wrap;gap:12px 22px}
+
+/* Equal contact links and a tiny ant walking along the log. */
+.contact-email,.contact-links a{font:clamp(21px,3vw,37px)/1.4 Georgia,serif}
+.contact-links .linkedin-logo{width:.8em;height:.8em;vertical-align:-.03em}
+.log-scene{position:relative;width:100%;max-width:1000px;margin:-12px 0 28px}
+.log-scene .contact-underline{margin:0;max-width:none}
+.log-ant{position:absolute;left:3%;top:40%;width:22px;height:14px;transform:translateY(-50%);pointer-events:none;animation:ant-crawl 26s linear infinite}
+.ant-legs-a,.ant-legs-b{transform-origin:16px 10px;animation:ant-step .24s ease-in-out infinite alternate}.ant-legs-b{animation-direction:alternate-reverse}
+@keyframes ant-crawl{0%{left:3%;opacity:0}2%{opacity:1}98%{opacity:1}100%{left:95%;opacity:0}}
+@keyframes ant-step{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
+@media(max-width:760px){.log-scene{margin-top:0}.log-ant{width:17px;height:11px}}
+@media(prefers-reduced-motion:reduce){.log-ant{animation:none;left:58%}.ant-legs-a,.ant-legs-b{animation:none}}

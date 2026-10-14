@@ -53,7 +53,7 @@
   const pause=root.querySelector('#signals-pause'), replay=root.querySelector('#signals-replay');
   const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
   let elapsed=0,last=0,frame=0,running=false,started=false,stage=-1;
-  const captions=['Sleep alone tells only part of the story.','Voice, activity, language, and neural signals add complementary perspectives.','Different fibers. One rope. A richer basis for understanding.','Combined evidence + lived experience → a personalized care conversation.'];
+  const captions=['Sleep alone tells only part of the story.','Voice, activity, language, and neural signals add complementary perspectives.','Different fibers. One rope. A richer basis for understanding.',''];
   function render(t) {
     drawables.forEach(({n,length,start,duration})=>{const p=Math.max(0,Math.min(1,(t-start)/duration));n.style.strokeDashoffset=length*(1-p);n.style.opacity=p>0?'1':'0';});
     labels.forEach(({n,start})=>n.style.opacity=t>=start?'1':'.2');

@@ -48,18 +48,14 @@
       path(`M${x} ${y}L${x2} ${y2}`,color,4.6+z*.7,10.4+k*.028,.16);
     });
   }
-  el('text',{x:140,y:397,'font-size':16},'Same observation window · different perspectives');
-  const caption=root.querySelector('#signals-caption'), plan=root.querySelector('#signals-plan');
+  const plan=root.querySelector('#signals-plan');
   const pause=root.querySelector('#signals-pause'), replay=root.querySelector('#signals-replay');
   const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
-  let elapsed=0,last=0,frame=0,running=false,started=false,stage=-1;
-  const captions=['Sleep alone tells only part of the story.','Voice, activity, language, and neural signals add complementary perspectives.','Different fibers. One rope. A richer basis for understanding.',''];
+  let elapsed=0,last=0,frame=0,running=false,started=false;
   function render(t) {
     drawables.forEach(({n,length,start,duration})=>{const p=Math.max(0,Math.min(1,(t-start)/duration));n.style.strokeDashoffset=length*(1-p);n.style.opacity=p>0?'1':'0';});
     labels.forEach(({n,start})=>n.style.opacity=t>=start?'1':'.2');
     plan.classList.toggle('is-revealed',t>=13.5);
-    const next=t<1.4?0:t<8?1:t<13.5?2:3;
-    if(stage!==next){caption.textContent=captions[next];stage=next;}
   }
   function tick(now){if(!running)return;if(last)elapsed+=(now-last)/1000;last=now;render(elapsed);if(elapsed<15)frame=requestAnimationFrame(tick);else{running=false;pause.textContent='Play';}}
   function stop(){running=false;cancelAnimationFrame(frame);last=0;pause.textContent='Play';}

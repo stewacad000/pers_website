@@ -100,3 +100,5 @@ svg.sleep-wearable{stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 @media(prefers-reduced-motion:reduce){.signals-plan{transition:none}}
 
 .signals-heading{display:block}.signals-controls>p:empty{display:none}.signals-controls{justify-content:flex-end}.signals-controls>p{margin-right:auto}
+
+.contact h2 .contact-aside{display:block;font-size:.78em;line-height:1.35;margin-top:.3em}

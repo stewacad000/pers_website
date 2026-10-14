@@ -64,3 +64,10 @@ svg.sleep-wearable{stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .landscape{width:min(100%,484px);left:clamp(24px,calc(50vw - 585px),120px)}
 @media(max-width:1050px){.landscape{width:100%;left:16px}}
 @media(max-width:760px){.landscape{left:8px}}
+
+/* Still landscape with moving valley mist and a quiet contact illustration. */
+.hero{isolation:isolate}.hero-mist,.hero-shade{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-mist{z-index:0;object-fit:cover;object-position:center 55%}.hero-shade{z-index:1;background:linear-gradient(90deg,#2f241ec9 0%,#34291f55 55%,#201a1220 100%)}
+.hero-copy,.hero .landscape{z-index:2}.trekking-underline{display:block;width:100%;max-width:1000px;height:auto;margin:-12px 0 28px}
+@media(max-width:760px){.hero-mist{object-position:62% center}.trekking-underline{margin-top:0}}
+@media(prefers-reduced-motion:reduce){.hero-mist,.hero-shade{display:none}}

@@ -30,3 +30,14 @@ if ('IntersectionObserver' in window) {
   }, {rootMargin:'-20% 0px -60% 0px'});
   document.querySelectorAll('main section[id]').forEach(section => observer.observe(section));
 }
+
+const heroMist = document.querySelector('.hero-mist');
+if (heroMist && window.matchMedia) {
+  const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const updateMistPlayback = () => {
+    if (motionPreference.matches) heroMist.pause();
+    else heroMist.play().catch(() => {});
+  };
+  updateMistPlayback();
+  motionPreference.addEventListener('change', updateMistPlayback);
+}

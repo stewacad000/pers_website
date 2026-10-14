@@ -79,7 +79,7 @@ svg.sleep-wearable{stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .publication-profiles{display:flex;align-items:center;flex-wrap:wrap;gap:12px 22px}
 
 /* Equal contact links and a tiny ant walking along the log. */
-.contact-email,.contact-links a{font:clamp(21px,3vw,37px)/1.4 Georgia,serif}
+.contact-email,.contact-links a{font:clamp(18px,2vw,24px)/1.4 Georgia,serif;color:#e7d6b9;display:inline-flex;align-items:center;gap:8px}
 .contact-links .linkedin-logo{width:.8em;height:.8em;vertical-align:-.03em}
 .log-scene{position:relative;width:100%;max-width:1000px;margin:-12px 0 28px}
 .log-scene .contact-underline{margin:0;max-width:none}
@@ -89,3 +89,5 @@ svg.sleep-wearable{stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 @keyframes ant-step{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
 @media(max-width:760px){.log-scene{margin-top:0}.log-ant{width:17px;height:11px}}
 @media(prefers-reduced-motion:reduce){.log-ant{animation:none;left:58%}.ant-legs-a,.ant-legs-b{animation:none}}
+
+.email-icon{width:.8em;height:.8em;flex-shrink:0}.contact-links .linkedin-logo{margin-right:0}
